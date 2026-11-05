@@ -1,0 +1,26 @@
+# Environment Variables & Secrets (Crucial for Security)
+.env
+.env.*
+
+# Python Virtual Environments & Caches
+576_venv/
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Archived Diagnostics, Scratch Notes & Legacy Prototypes
+_archive/
+tests/probes/
+
+# Editor & Local Agent Configs
+.vscode/
+.claude/
+.mcp.json
+
+# Frontend Dependencies & Build Artifacts
+frontend/node_modules/
+frontend/dist/
+
+# Local PDF Corpus Files
+*.pdf
