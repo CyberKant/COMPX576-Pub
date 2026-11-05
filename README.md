@@ -10,9 +10,9 @@ All active runtime functionality is launched via two commands:
 
 ### Step 1: Start the FastAPI Backend (`http://127.0.0.1:8000`)
 ```powershell
-cd C:\project-576
+cd C:\project-576 #example path
 .\.venv\Scripts\Activate.ps1
-pip install -r requriements.txt
+pip install -r requirements.txt
 python server_api\main.py
 ```
 *On startup, the backend initializes `HybridQueryEngine`, verifies L0/L1 synchronization between the Supabase `extracted_graph` JSONB cache and the Neo4j graph projection (repairing any drift in 0 LLM tokens), and resumes any interrupted PDF ingestion jobs.*
