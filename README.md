@@ -4,6 +4,40 @@ A full-stack **Hybrid Graph-RAG (Retrieval-Augmented Generation)** web applicati
 
 ---
 
+## Screenshots
+
+> **Full project report** (architecture, formal retrieval model, testing, security matrix, 108-run benchmark vs. TrustGraph, engineering challenges): [`docs/GraphRAG_report.pdf`](docs/GraphRAG_report.pdf)
+
+![Dashboard overview](docs/screenshots/dashboard-full.png)
+*Week 10 dashboard. Left: document bar, query console, advanced settings, telemetry ribbon and the grounded answer. Right: interactive force-directed causal graph with node inspector and the 7 Talmy ontology filters.*
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/in-scope-query.png" alt="In-scope query"></td>
+    <td width="50%"><img src="docs/screenshots/strict-grounding-refusal.png" alt="Out-of-scope query refused"></td>
+  </tr>
+  <tr>
+    <td><em>In-scope question: a synthesized multi-hop answer with its causal subgraph.</em></td>
+    <td><em>Strict grounding: an out-of-scope question is refused with <code>INSUFFICIENT_CONTEXT</code> rather than hallucinated, and the retrieved source chunks are shown with their cosine similarity.</em></td>
+  </tr>
+</table>
+
+![Inline ontology citations](docs/screenshots/inline-citations.png)
+*Inline <code>(SOURCE) -[RELATION]-> (TARGET)</code> citations rendered as clickable, colour-coded ontology badges.*
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/telemetry-and-graph.png" alt="Telemetry ribbon and graph"></td>
+    <td width="50%"><img src="docs/screenshots/ontology-legend.png" alt="Ontological basis vectors legend"></td>
+  </tr>
+  <tr>
+    <td><em>Earlier build: live telemetry (latency, context tokens, nodes, edges, depth bound) beside the traversed subgraph.</em></td>
+    <td><em>The 7 closed-class Force Dynamics primitives, used as the graph's edge types and as a canvas filter.</em></td>
+  </tr>
+</table>
+
+---
+
 ## 1. Quickstart (Out-of-the-Box Local Execution)
 
 All active runtime functionality is launched via two commands:

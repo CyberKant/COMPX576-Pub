@@ -24,3 +24,6 @@ frontend/dist/
 
 # Local PDF Corpus Files
 *.pdf
+
+# ...but keep the final project report in docs/
+!docs/*.pdf
